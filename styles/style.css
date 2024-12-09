@@ -20,7 +20,6 @@
 
 .header__links-list {
   list-style: circle;
-  display: inline-block;
   display: flex;
 }
 
@@ -34,7 +33,7 @@
   list-style: none;
   display: list-item;
   margin-right: 31.48px;
-  margin-left: 26.52px; 
+  margin-left: 26.52px;
 }
 
 .header__link {
@@ -77,7 +76,7 @@
   margin-top: 103.37px;
   margin-bottom: 179px;
   flex-grow: 1;
-  position:relative; 
+  position:relative;
   z-index: 1;
   background:
   linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -111,8 +110,7 @@
 .aligned-text_right {
   display: block;
   text-align: right;
-  line-height: 1; 
-
+  line-height: 1;
 }
 
 .letter-spacing-extended {
@@ -132,7 +130,7 @@
   
 .cover__description-text {
   word-spacing: 19px;
-  padding-left: 78px;  
+  padding-left: 78px;
   padding-right: 79px;
   padding-bottom: 62px;
   padding-top: 12px;
@@ -188,16 +186,16 @@
   padding-top: 51px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottom: 48px; 
+  padding-bottom: 48px;
   width: 334px;
   height: 563px;
 }
 
 .card_type_film {
   display: flex;
-  background: 
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("../images/card-lot-01.jpg"); 
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/card-lot-01.jpg");
   background-position: center;
   background-size: cover;
   flex-direction: column;
@@ -207,12 +205,12 @@
 .card_type_book {
   display: flex;
   background:
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("../images/card-lot-02.jpg");
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/card-lot-02.jpg");
   background-position: center;
   background-size: cover;
   flex-direction: column;
-  justify-content:space-between;  
+  justify-content:space-between;
 }
 
 .card_type_picture {
@@ -226,7 +224,7 @@
   justify-content:space-between;
 }
 
-.card__title { 
+.card__title {
   text-transform: uppercase;
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -239,9 +237,9 @@
  
 .about {
   width: 1052px;
-  height: 595px; 
+  height: 595px;
   margin-left: 24px;
-  margin-right: 24px ;
+  margin-right: 24px;
   margin-bottom: 180px;
   display: grid;
   grid-template-columns: 44px 240px 75px 693px;
@@ -292,7 +290,7 @@
   margin-top: 180px;
   margin-left: 50px;
   margin-bottom: 88px;
-  margin-right: 50px; 
+  margin-right: 50px;
   justify-content: space-between;
   flex-direction: row;
 }
@@ -316,7 +314,7 @@
 }
 
 .footer__social-list {
-  width: 240px; 
+  width: 240px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
