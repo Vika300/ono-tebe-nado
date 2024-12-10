@@ -1,19 +1,18 @@
 .body {
-  width: 1100px;
-  height: 3028px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-style: normal;
 }
+
 .header {
   display: flex;
   width: 1052px;
-  height: 105px;
   margin-top: 92px;
   margin-left:  24px;
   margin-right: 24px;
   align-items: center;
-  font-family: 'Raleway';
-  font-size: 18px;
-  font-style: normal;
 }
+
 .header__menu {
   display: flex;
 }
@@ -21,6 +20,7 @@
 .header__links-list {
   list-style: circle;
   display: flex;
+  text-underline-offset: 4px;
 }
 
 .header__links-list-item {
@@ -43,37 +43,40 @@
 
 .header__link_active {
   display: inline-block;
+  text-decoration: none;
 }
 
 .header__logo {
-  margin-left: 13.03px;
-  margin-right: 194.38px;
+  margin-left: 7px;
+  margin-right: 184px;
 }
 
 .header__logo-image {
-  width: 129.11px;
-  height: 104.65px;
+  width: 148px;
+  height: 105px;
 }
 
 .address {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: flex-start;
-  height: 97px;
+  align-content: center;
   width: 240.52px;
   font-style: normal;
-  margin-top: 5px;
-  margin-bottom: 2px;
 }
 
-.header__address {
+.address__link {
   min-height: 24px;
   text-underline-offset: 4px;
 }
 
+.address__text {
+  min-height: 49px;
+  line-height: 24.3px;
+}
+
 .cover {
-  margin-top: 103.37px;
+  margin-top: 92px;
   margin-bottom: 179px;
   flex-grow: 1;
   position:relative;
@@ -125,26 +128,21 @@
   display: flex;
   align-items: start;
   font-size: 22px;
-  margin-top: 135px;
+  margin-top: 133px;
 }
   
 .cover__description-text {
   word-spacing: 19px;
   padding-left: 78px;
-  padding-right: 79px;
+  padding-right: 77px;
   padding-bottom: 62px;
   padding-top: 12px;
-}
-
-.overlay {
-  position: absolute;
 }
 
 .bet-button {
   padding: 12px 32px 11px 31px;
   border-style: solid;
   border-width: 1px;
-  font-weight: bolder;
   text-decoration: none;
   font-size: 22px;
 }
@@ -166,6 +164,8 @@
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
   flex-grow: 1;
   flex-direction: row;
   color: white;
@@ -188,40 +188,25 @@
   padding-right: 40px;
   padding-bottom: 48px;
   width: 334px;
-  height: 563px;
+  min-height: 563px;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  justify-content:space-between;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .card_type_film {
-  display: flex;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/card-lot-01.jpg");
-  background-position: center;
-  background-size: cover;
-  flex-direction: column;
-  justify-content:space-between;
+  background: url("../images/card-lot-01.jpg");
 }
 
 .card_type_book {
-  display: flex;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/card-lot-02.jpg");
-  background-position: center;
-  background-size: cover;
-  flex-direction: column;
-  justify-content:space-between;
+  background: url("../images/card-lot-02.jpg");
 }
 
 .card_type_picture {
-  display: flex;
-  background:
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("../images/card-lot-03.jpg");
-  background-position: center;
-  background-size: cover;
-  flex-direction: column;
-  justify-content:space-between;
+  background: url("../images/card-lot-03.jpg");
 }
 
 .card__title {
@@ -237,10 +222,8 @@
  
 .about {
   width: 1052px;
-  height: 595px;
   margin-left: 24px;
   margin-right: 24px;
-  margin-bottom: 180px;
   display: grid;
   grid-template-columns: 44px 240px 75px 693px;
   grid-template-rows: 40px 240px auto;
@@ -279,6 +262,7 @@
   grid-area: about__text;
   align-items:start;
   display: grid;
+  gap: 24px;
   grid-template-columns: auto;
   grid-template-rows: 120px 23px 168px;
 }
@@ -286,8 +270,7 @@
 .footer {
   display: flex;
   width: 1000px;
-  height: 98px;
-  margin-top: 180px;
+  margin-top: 134px;
   margin-left: 50px;
   margin-bottom: 88px;
   margin-right: 50px;
@@ -311,6 +294,11 @@
 
 .footer__menu-link {
   text-decoration: underline;
+}
+
+.footer__menu-link_active {
+  display: inline-block;
+  text-decoration: none;
 }
 
 .footer__social-list {
