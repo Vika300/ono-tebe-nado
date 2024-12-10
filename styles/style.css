@@ -180,6 +180,7 @@
   padding-top: 30px;
   padding-left: 40px;
   font-size: 20px;
+  text-underline-offset: 4px;
 }
 
 .card {
@@ -195,6 +196,10 @@
   flex-direction: column;
   justify-content:space-between;
   background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.card__link {
+  text-decoration: none;
 }
 
 .card_type_film {
