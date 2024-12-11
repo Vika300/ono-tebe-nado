@@ -233,13 +233,12 @@
  
 .about {
   width: 1052px;
+  padding-top: 40px;
   margin-left: 24px;
   margin-right: 24px;
   display: grid;
   grid-template-columns: 44px 240px 75px 693px;
-  grid-template-rows: 40px 240px auto;
   grid-template-areas:
-  " . . . ."
   ". about__logo . about__title"
   ". . . about__text"
 }
@@ -275,13 +274,12 @@
   display: grid;
   gap: 24px;
   grid-template-columns: auto;
-  grid-template-rows: 120px 23px 168px;
 }
 
 .footer {
   display: flex;
   width: 1000px;
-  margin-top: 134px;
+  margin-top: 180px;
   margin-left: 50px;
   margin-bottom: 88px;
   margin-right: 50px;
